@@ -1,0 +1,68 @@
+^XA
+
+^CF0,20
+^FO8,10^FD AeroBrasil^FS
+^FO93,20^FD Parts^FS
+
+^FX-------------------(LABEL)^FS 
+
+^FO25,30^BQ,4,4^FD>https://www.gov.br/anac/pt-br^FS ^FX----- QR code
+
+^CF0,20
+^FO215,8^FD AXT5671^FS
+
+^A@N,10,5,C:\Fonts\Calibri.FNT
+^FO175,40^FD TURBINA^FS ^FX-----NOME DA PEÇA
+
+^A@N,10,5,C:\Fonts\Calibri.FNT
+^FO290,40^FD HX-1000^FS ^FX----- MODELO PEÇA
+
+^A@N,10,5,C:\Fonts\Calibri.FNT
+^FO175,60^FD ELEB^FS ^FX-----MARCA
+
+^A@N,10,5,C:\Fonts\Calibri.FNT
+^FO290,60^FD 0A3567FGS^FS ^FX-----COD MARCA
+
+^A@N,10,5,C:\Fonts\Calibri.FNT
+^FO175,80^FD GRUMMAN HU-16 ALBATROSS^FS ^FX-----APLICAÇÃO
+
+^CF0,14
+^FO175,105^FD MANUFCTURING DESCRIPTION^FS ^FX----- Descrição
+
+^A@N,15,10,C:\Fonts\Calibri.FNT
+^FO255,122^FD SN-0890^FS ^FX-----Fabricação
+
+^A@N,10,5,C:\Fonts\Calibri.FNT
+^FO175,125^FD SN--02220^FS ^FX-----Fabricação
+
+^A@N,10,5,C:\Fonts\Calibri.FNT
+^FO175,148^FD CERTIFACED: ^FS ^FX-----Certificado
+
+^A@N,10,5,C:\Fonts\Calibri.FNT
+^FO245,148^FD 4567.6890 ^FS ^FX-----Certificado
+
+^CF0,16
+^FO15,165^FD CERTIFIED BY ANAC^FS ^FX-----Certificado ANAC
+
+^A@N,10,5,C:\Fonts\Calibri.FNT
+^FO15,190^FD JAN/2024^FS ^FX----- DATA FABRICAÇÃO
+
+^A@N,10,5,C:\Fonts\Calibri.FNT
+^FO90,190^FD BRAZIL^FS ^FX----- ORIGEM
+
+^A@N,10,5,C:\Fonts\Calibri.FNT
+^FO15,210^FD VALID: UNDETERMINED^FS ^FX----- DATA FABRICAÇÃO
+
+^FX-------------------(LAYOUT)^FS 
+^FO0,0^GB359,239,1,0,^FS ^FX --- Retângulo Externo
+^FO0,0^GB170,239,1,0,^FS
+^FO169,0^GB190,29,1,0,^FS
+^FO169,0^GB190,100,1,0,^FS
+^FO169,0^GB190,120,1,0,^FS
+^FO169,119^GB90,20,1,0,^FS
+^FO169,119^GB190,20,1,0,^FS
+^FO169,138^GB190,25,1,0,^FS
+
+^FO200,170^BY1^BCN,50^FD 12239043^FX VALOR DO EAN
+
+^XZ
