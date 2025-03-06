@@ -8,7 +8,7 @@
 <h3> - Python</h3>
 
 <h2>bilbiotecas utilizadas: </h2>
-<h3> - customtkinter</h3> <p> - Criação de GUI </p>
-<h3> - schedule</h3> <p> - Agendamento </p>
+<h3> - customtkinter - Criação de GUI </h3>
+<h3> - schedule - Agendamento </h3>
 
 <h3>Desenvolvedor do Projeto: Matheus Felix Barbosa</h3>
