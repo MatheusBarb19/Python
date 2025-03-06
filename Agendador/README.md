@@ -2,7 +2,7 @@
 
 <p>Esta aplicação foi desenvolvida como parte de um projeto maior. Este projeto trata-se apenas da parte de Interface Gráfica da aplicação.</p>
 <h2>Objetivos: </h2> 
-<h3> Agendar a execução de tarefas de maneiras diárias, semanais ou mensais </h3> 
+<h3> Agendar a execução de tarefas de maneiras diárias, semanais ou mensais. </h3> 
 <p> O projeto completo, consiste em realizar agendamentos de backups de arquivos no disco local e posteriormente na nuvem <p>
 <h2>Tecnologias utilizadas: </h2>
 <h3> - Python</h3>
