@@ -11,4 +11,4 @@
 <h3> - customtkinter</h3>
 <h3> - schedule</h3>
 
-<h2>Desenvolvedor do Projeto: Matheus Felix Barbosa</h2>
+<h3>Desenvolvedor do Projeto: Matheus Felix Barbosa</h3>
