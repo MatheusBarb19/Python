@@ -1,18 +1,46 @@
-<h1 align="center">Gerador de Backup</h1>
+📁 Gerador de Backup
 
-<p>Esta aplicação foi desenvolvida com o objetivo de gerar backups de arquivos, posteriomente salvando-os em um local </p>
+Aplicação simples para automatizar o backup de arquivos, copiando-os para um diretório de destino e compactando-os. O usuário pode escolher a pasta de origem e o local onde o backup será salvo.
 
-<h2>Objetivos:</h2>
-<h4>Criar uma pasta do dia atual</h4>
-<h4>Copiar os arquivos da pasta alvo</h4>
-<h4>Adicioná-los na pasta recém criada</h4>
-<h4>Compactar a pasta</h4>
+🚀 Funcionalidades
 
-<h2>Tecnologias utilizadas:</h2>
-<h4>- Python</h4>
+Criar automaticamente uma pasta com a data atual para o backup.
 
-<h2>Bibliotecas utilizadas:</h2>
-<h4>- <strong>Os : </strong> Disponibiliza recursos do Sistema Operacional.</h4>
-<h4>- <strong>Shutil : </strong>  Disponibiliza recursos para operações de arquivos e diretórios.</h4>
+Copiar arquivos da pasta alvo.
 
-<h3>Desenvolvedor do Projeto: Matheus Felix Barbosa</h3>
+Armazenar os arquivos copiados na pasta recém-criada.
+
+Compactar a pasta de backup para economizar espaço.
+
+🛠 Tecnologias
+
+Linguagem: Python
+
+📦 Bibliotecas utilizadas
+
+os → Manipulação do sistema operacional.
+
+shutil → Operações com arquivos e diretórios.
+
+📌 Como Usar
+
+Clone este repositório:
+
+git clone https://github.com/seuusuario/gerador-backup.git
+
+Acesse a pasta do projeto:
+
+cd gerador-backup
+
+Execute o script:
+
+python backup.py
+
+📷 Demonstração
+
+(Inclua aqui prints ou um GIF mostrando o funcionamento do sistema!)
+
+🧑‍💻 Autor
+
+Matheus Felix Barbosa
+
