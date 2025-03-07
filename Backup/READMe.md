@@ -26,7 +26,7 @@ shutil → Operações com arquivos e diretórios.
 
 Clone este repositório:
 
-git clone https://github.com/seuusuario/gerador-backup.git
+git clone https://github.com/MatheusBarb19/gerador-backup.git
 
 Acesse a pasta do projeto:
 
