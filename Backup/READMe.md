@@ -12,17 +12,17 @@ Armazenar os arquivos copiados na pasta recém-criada.
 
 Compactar a pasta de backup para economizar espaço.
 
-🛠 Tecnologias
+<h2>🛠 Tecnologias</h2>
 
 Linguagem: Python
 
-📦 Bibliotecas utilizadas
+<h2>📦 Bibliotecas utilizadas</h2>
 
 os → Manipulação do sistema operacional.
 
 shutil → Operações com arquivos e diretórios.
 
-📌 Como Usar
+<h2>📌 Como Usar </h2>
 
 Clone este repositório:
 
@@ -36,11 +36,11 @@ Execute o script:
 
 python backup.py
 
-📷 Demonstração
+<h2>📷 Demonstração</h2>
 
 (Inclua aqui prints ou um GIF mostrando o funcionamento do sistema!)
 
-🧑‍💻 Autor
+<h2>🧑‍💻 Autor</h2>
 
 Matheus Felix Barbosa
 
