@@ -22,23 +22,14 @@ os → Manipulação do sistema operacional.
 
 shutil → Operações com arquivos e diretórios.
 
+json → Manipulação de arquivos json
+
 <h2>📌 Como Usar </h2>
-
-Clone este repositório:
-
-git clone https://github.com/MatheusBarb19/Backup.git
-
-Acesse a pasta do projeto:
-
-cd gerador-backup
-
-Execute o script:
-
-python backup.py
+Acesse o link a para verificar o manual do usuário: <a href="https://files.fm/u/5yp8uq5tds">Manual Usuário.PDF</a>
 
 <h2>📷 Demonstração</h2>
 
-(Inclua aqui prints ou um GIF mostrando o funcionamento do sistema!)
+<img src="‪C:\Users\mathe\Pictures\Likedin\Gerador_backup\backup.exe.png" alt="Demonstração do sistema" width="600">
 
 <h2>🧑‍💻 Autor</h2>
 
