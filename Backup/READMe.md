@@ -27,10 +27,6 @@ json → Manipulação de arquivos json
 <h2>📌 Como Usar </h2>
 Acesse o link a para verificar o manual do usuário: <a href="https://files.fm/u/5yp8uq5tds">Manual Usuário.PDF</a>
 
-<h2>📷 Demonstração</h2>
-
-![Descrição da imagem](imagens/Arquivo.png.png)
-
 <h2>🧑‍💻 Autor</h2>
 
 Matheus Felix Barbosa
