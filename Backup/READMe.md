@@ -29,7 +29,7 @@ Acesse o link a para verificar o manual do usuário: <a href="https://files.fm/u
 
 <h2>📷 Demonstração</h2>
 
-![Demonstração do sistema](C:\Users\mathe\Pictures\Likedin\Gerador_backup\backup.exe.png)
+<img src="‪C:\Users\mathe\Pictures\Likedin\Gerador_backup\backup.exe.png" alt="Demonstração do sistema" width="600">
 
 <h2>🧑‍💻 Autor</h2>
 
