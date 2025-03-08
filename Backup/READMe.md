@@ -25,7 +25,7 @@ shutil → Operações com arquivos e diretórios.
 json → Manipulação de arquivos json
 
 <h2>📌 Como Usar </h2>
-<a href="https://files.fm/u/5yp8uq5tds">
+<a href="https://files.fm/u/5yp8uq5tds">Manual Usuário.PDF</a>
 
 <h2>📷 Demonstração</h2>
 
