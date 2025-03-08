@@ -1,6 +1,6 @@
 <h1>📁 Gerador de Backup</h1>
 
-Aplicação simples para automatizar o backup de arquivos, copiando-os para um diretório de destino e compactando-os. O usuário pode escolher a pasta de origem e o local onde o backup será salvo.
+Aplicação simples para automatizar o backup de arquivos, copiando-os para um diretório de destino e compactando-os. O usuário pode escolher a pasta de origem e o local onde o backup será salvo. 
 
 <h2>🚀 Funcionalidades</h2>
 
@@ -26,10 +26,6 @@ json → Manipulação de arquivos json
 
 <h2>📌 Como Usar </h2>
 Acesse o link a para verificar o manual do usuário: <a href="https://files.fm/u/5yp8uq5tds">Manual Usuário.PDF</a>
-
-<h2>📷 Demonstração</h2>
-
-![Descrição da imagem](imagens/minha-imagem.png)
 
 <h2>🧑‍💻 Autor</h2>
 
