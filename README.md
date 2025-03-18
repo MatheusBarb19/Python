@@ -4,18 +4,19 @@ Bem-vindo ao meu repositório dedicado aos meus projetos em Python! 🐍
 
 ## 📁 Estrutura do Repositório
 
-- **/projeto1**: Breve descrição do primeiro projeto.
-- **/projeto2**: Breve descrição do segundo projeto.
-- **/utils/**: Scripts e ferramentas úteis.
-- **/docs/**: Documentação e anotações importantes.
+- **Gerador de Senhas**: Gera senhas com condições pré-definidas pelo usuário.
+- **Gerador de Etiquetas**: Gera um PDF contém as etiquetas, utiliza a linguagem ZPL para isso.
+- **Backup**: Script responsável por gerar backups compactados de arquivos e pastas, pré-definidas pelo usuário.
+- **Pesquisa Mercado Livre**: Realiza pesquisas na plataforma do Mercado Livre, extraí, filtra e exporta uma base de dados.
 
 ## 🛠️ Tecnologias Utilizadas
 
 - **Python 3.x**
 - **Bibliotecas:**
-  - Flask
+  - Selenium
   - Pandas
   - NumPy
+  - Openpyxl
   - Matplotlib
   - Requests
 
