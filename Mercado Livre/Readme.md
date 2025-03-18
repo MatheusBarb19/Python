@@ -60,7 +60,9 @@ WebScraper_MercadoLivre/
 
 Este projeto é de uso livre e pode ser modificado conforme necessário.
 
----
+Matheus Barbosa
+
+
 
 🚀 Desenvolvido para facilitar a pesquisa de produtos e análise de preços no Mercado Livre!
 
