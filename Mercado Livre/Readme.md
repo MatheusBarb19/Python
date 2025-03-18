@@ -63,10 +63,13 @@ Pesquisa_MercadoLivre/
 - Exportação dos dados para banco de dados.
 - Integração com APIs para notificações automatizadas.
 
-## 📄 Licença
+## 📌 Como Usar
 
-Este projeto é de uso livre e pode ser modificado conforme necessário.
+Acesse o link a para verificar o manual do usuário:
 
+## ⚙️ Funcionamento:
+
+Acesse o link para ver o vídeo: 
 
 ## 👨‍💻 Desenvolvido por:
 
