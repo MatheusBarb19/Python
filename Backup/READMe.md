@@ -29,7 +29,7 @@ Acesse o link a para verificar o manual do usuário: <a href="https://drive.goog
 
 <h2>⚙️ Funcionamento</h2>
 
-Acesse o link para ver o vídeo: <a href="[https://drive.google.com/file/d/11dnjQCBC_mSMJqKFvX3YW0KmUS3cL5Aj/view?usp=drive_link](https://drive.google.com/file/d/1J9bMvbx3d07_D9zJ3YWAUgKO4ZkIu7Vd/view?usp=drive_link)">Funcionamento</a>
+Acesse o link para ver o vídeo: <a href="https://drive.google.com/file/d/11dnjQCBC_mSMJqKFvX3YW0KmUS3cL5Aj/view?usp=sharing">Funcionamento</a>
 
 <h2>🧑‍💻 Autor</h2>
 
