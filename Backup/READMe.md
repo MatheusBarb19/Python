@@ -1,37 +1,43 @@
-<h1>📁 Gerador de Backup</h1>
+# 📁 Sistema de Backup Automatizado
 
-Aplicação simples para automatizar o backup de arquivos, copiando-os para um diretório de destino e compactando-os. O usuário pode escolher a pasta de origem e o local onde o backup será salvo. 
+## 📌 Descrição
 
-<h2>🚀 Funcionalidades</h2>
+Este script em Python automatiza o backup de arquivos e pastas, copiando-os para um diretório de destino, compactando os dados em um arquivo `.zip` e gerando um log do processo. Ele também permite a configuração dinâmica da origem e destino dos arquivos por meio de um arquivo JSON.
 
-Criar automaticamente uma pasta com a data atual para o backup.
+## 🚀 Funcionalidades
 
-Copiar arquivos da pasta alvo.
+- Cria automaticamente um diretório de backup baseado na data atual.
+- Lê configurações de origem e destino a partir de um arquivo `config_backup.json`.
+- Copia arquivos e pastas da origem para o destino.
+- Compacta o backup em um arquivo `.zip`.
+- Gera um log detalhado do processo.
+- Remove a pasta temporária após a compactação.
 
-Armazenar os arquivos copiados na pasta recém-criada.
+## 🛠 Tecnologias Utilizadas
 
-Compactar a pasta de backup para economizar espaço.
+- Python 3
+- `shutil` (cópia e compactação de arquivos)
+- `pathlib` (manipulação de diretórios)
+- `json` (leitura/escrita do arquivo de configuração)
+- `datetime` (registro de logs e nomeação de arquivos)
 
-<h2>🛠 Tecnologias</h2>
+## 📂 Estrutura de Arquivos
 
-Linguagem: Python
+```
+Backup_Script/
+│-- config_backup.json
+│-- backup_script.py
+│-- Backup/ (gerado automaticamente)
+│   ├── YYYY-MM-DD/ (arquivos copiados)
+│   ├── YYYY-MM-DD.zip (backup compactado)
+│   ├── arquivo_log.txt (log do processo)
+```
 
-<h2>📦 Bibliotecas utilizadas</h2>
+## ⚙️ Configuração
 
-os → Manipulação do sistema operacional.
+Antes de executar o script, edite o arquivo `config_backup.json` para definir a origem e destino do backup:
 
-shutil → Operações com arquivos e diretórios.
-
-json → Manipulação de arquivos json
-
-<h2>📌 Como Usar </h2>
-Acesse o link a para verificar o manual do usuário: <a href="https://drive.google.com/file/d/1J9bMvbx3d07_D9zJ3YWAUgKO4ZkIu7Vd/view?usp=sharing">Manual do Usuário.PDF</a>
-
-<h2>⚙️ Funcionamento</h2>
-
-Acesse o link para ver o vídeo: <a href="[https://drive.google.com/file/d/11dnjQCBC_mSMJqKFvX3YW0KmUS3cL5Aj/view?usp=drive_link](https://drive.google.com/file/d/1J9bMvbx3d07_D9zJ3YWAUgKO4ZkIu7Vd/view?usp=drive_link)">Funcionamento</a>
-
-<h2>🧑‍💻 Autor</h2>
-
-Matheus Felix Barbosa
-
+```json
+{
+    "origem": "C:/caminho/para/origem",
+    "destino": "D:/
