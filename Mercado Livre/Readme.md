@@ -70,9 +70,9 @@ Este projeto é de uso livre e pode ser modificado conforme necessário.
 
 ## 👨‍💻 Desenvolvido por:
 
-Matheus Barbosa
-E-mail: mateus.felixbarb@gmail.com
-Likedin: https://www.linkedin.com/in/matheus-felix-barbosa-658422227
+- Matheus Barbosa
+- E-mail: mateus.felixbarb@gmail.com
+- Likedin: https://www.linkedin.com/in/matheus-felix-barbosa-658422227
 
 🚀 Desenvolvido para facilitar a pesquisa de produtos e análise de preços no Mercado Livre!
 
