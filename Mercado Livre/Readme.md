@@ -63,13 +63,13 @@ Pesquisa_MercadoLivre/
 - Exportação dos dados para banco de dados.
 - Integração com APIs para notificações automatizadas.
 
-## 📌 Como Usar
+## 📌 Manual do Usuário
 
-Acesse o link a para verificar o manual do usuário:
+Acesse o link a para verificar o manual do usuário: <a href="https://drive.google.com/file/d/1vIQCuIkTqQ2XDbDGEvApMp5CSEbMXwV7/view?usp=sharing">Aqui</a>
 
 ## ⚙️ Funcionamento:
 
-Acesse o link para ver o vídeo: 
+Acesse o link para ver o vídeo:  <a href="https://drive.google.com/file/d/1uMj4O3r6HC2q3i5wfRLK0-Rd1Xaqut5L/view?usp=sharing"> Aqui</a>
 
 ## 👨‍💻 Desenvolvido por:
 
