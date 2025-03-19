@@ -2,12 +2,16 @@
 
 ## 📌 Descrição
 
-Este script em Python utiliza Selenium para automatizar a busca de produtos no Mercado Livre, coletando informações como nome, preço e avaliação, e salvando os dados em um arquivo Excel.
+Este script em Python utiliza Selenium para automatizar a busca de produtos no Mercado Livre, coletando informações como nome, preço e avaliação. O script exporta os dados coletados para um arquivo Excel, que contém duas abas:
+   - "Geral": Todos os dados coletados, como nome do produto, preço e avaliação.
+   - "Por Preço": As informações filtradas e ordenadas do menor preço para o maior.
+   
 
 ## 🚀 Funcionalidades
 
 - Pesquisa automática de produtos no Mercado Livre.
 - Coleta nome, preço e avaliação dos produtos.
+- Filtra e ordena os produtos por preço (do menor para o maior).
 - Salva os dados extraídos em um arquivo `.xlsx`.
 - Utiliza Selenium para navegação e extração de dados.
 
@@ -21,8 +25,8 @@ Este script em Python utiliza Selenium para automatizar a busca de produtos no M
 ## 📂 Estrutura de Arquivos
 
 ```
-WebScraper_MercadoLivre/
-│-- scraper.py
+Pesquisa_MercadoLivre/
+│-- Pesquisa_MercadoLivre.py
 │-- Pesquisa_MercadoLivre.xlsx (arquivo gerado com os dados)
 ```
 
@@ -32,13 +36,13 @@ WebScraper_MercadoLivre/
    ```bash
    pip install selenium pandas
    ```
-2. **Baixe o Chrome WebDriver** compatível com sua versão do Chrome e adicione-o ao PATH.
+2. **Baixe o Chrome WebDriver** compatível com sua versão do Chrome [aqui](https://sites.google.com/a/chromium.org/chromedriver/).
 
 ## ▶️ Como Usar
 
 1. **Execute o script**:
    ```bash
-   python scraper.py
+   python Pesquisa_MercadoLivre.py
    ```
 2. **Digite o nome ou código do produto** que deseja pesquisar.
 3. O script abrirá o navegador, fará a pesquisa e salvará os dados em `Pesquisa_MercadoLivre.xlsx`.
@@ -50,17 +54,28 @@ WebScraper_MercadoLivre/
 | Teclado Mecânico RGB | R$ 199,90 | 4.8 ⭐ |
 | Mouse Gamer XYZ | R$ 129,99 | 4.5 ⭐ |
 
+- **Produto**: Nome do produto extraído.
+- **Preço**: Preço atual do produto.
+- **Avaliação**: Média de avaliações dos compradores.
+
 ## 🔥 Melhorias Futuras
 
-- Suporte para múltiplas páginas de resultados.
 - Exportação dos dados para banco de dados.
 - Integração com APIs para notificações automatizadas.
 
-## 📄 Licença
+## 📌 Manual do Usuário
 
-Este projeto é de uso livre e pode ser modificado conforme necessário.
+Acesse o link a para verificar o manual do usuário: <a href="https://drive.google.com/file/d/1vIQCuIkTqQ2XDbDGEvApMp5CSEbMXwV7/view?usp=sharing">Aqui</a>
 
----
+## ⚙️ Funcionamento:
+
+Acesse o link para ver o vídeo:  <a href="https://drive.google.com/file/d/1uMj4O3r6HC2q3i5wfRLK0-Rd1Xaqut5L/view?usp=sharing"> Aqui</a>
+
+## 👨‍💻 Desenvolvido por:
+
+- Matheus Barbosa
+- E-mail: mateus.felixbarb@gmail.com
+- Likedin: https://www.linkedin.com/in/matheus-felix-barbosa-658422227
 
 🚀 Desenvolvido para facilitar a pesquisa de produtos e análise de preços no Mercado Livre!
 
