@@ -79,14 +79,31 @@ def pesquisa_mercadolivre(codigo): #Passa o código inserido pelo usuário como 
             avaliacao.append("N/A")
     
     # Cria uma tabela (DataFrame) com os dados coletados
-    dados = pd.DataFrame({
-        "Produto": produtos,
+    dados = pd.DataFrame({  
+        "Produto": produtos, #Passando Lista como valor para o cabeçalho 
         "Preço": precos,
         "Avaliação": avaliacao
     })
     
-    # Salva a tabela em um arquivo Excel
-    dados.to_excel("Pesquisa_MercadoLivre.xlsx", index=False) #salva o DF como Excel
+    # Função para limpar e converter o preço corretamente
+    def tratar_preco(preco):
+        try:
+            #replace"R$"" remove o símbolo R$| replace"." remove pontos| replace",", "." remove vírgula por ponto| strip() remove espaços extras
+            preco = preco.replace("R$", "").replace(".", "").replace(",", ".").replace("\n", "").strip()
+            return float(preco)
+        except:
+            return 0
+    
+    # Aplica a função para tratar preços
+    dados["Preço"] = dados["Preço"].apply(tratar_preco)
+    
+    # Cria uma versão filtrada e ordena os dados
+    dados_filtrados = dados.sort_values(by="Preço") #Ordena do menor pro maior
+    
+    # Salva a tabela em um arquivo Excel, criando a aba chamada "Geral"
+    with pd.ExcelWriter("Pesquisa_MercadoLivre.xlsx", engine="openpyxl") as writer:
+        dados.to_excel(writer, sheet_name="Geral", index=False) #Contém os dados Gerais sem filtro
+        dados_filtrados.to_excel(writer, sheet_name="Por Preço", index=False)
     
     print("Dados salvos com sucesso!")
     print("Encerrando processo!")
