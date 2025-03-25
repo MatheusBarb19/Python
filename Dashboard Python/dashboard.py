@@ -47,7 +47,6 @@ def top10_municipios():  # Define uma função que gera o gráfico dos 10 munic�
     plt.show() # Exibe o gráfico gerado
 
 #2º Gráfico: Top 5 Estados com maior PIB
-
 def top5_estados():
     top_5_estados = pib_por_estado.head(5)
     
@@ -71,7 +70,6 @@ def top5_estados():
     plt.show()
 
 #3º Grafico: Participação de cada Estado no PIB Nacional
-
 def part_estado():
     # Remover espaços em branco da coluna do PIB e converter para numérico
     df['PIB'] = df['Produto Interno Bruto\na preços correntes\n(1 000 R$)'].str.replace(' ', '').astype(int)
@@ -105,7 +103,6 @@ def part_estado():
         )
 
 #Distruibuição de PIB por Estado (Matriz)
-
 def distribuicao_PibUF():
     # Definir a localidade para o Brasil (pt_BR)
     locale.setlocale(locale.LC_ALL, 'pt_BR.UTF-8')
