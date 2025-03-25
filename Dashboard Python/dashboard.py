@@ -142,5 +142,5 @@ def distribuicao_PibUF():
 top10_municipios()
 top5_estados()
 part_estado()
-
+distribuicao_PibUF()
 
