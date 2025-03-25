@@ -1,6 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import locale
+import seaborn as sns
 
 #Lendo df com Pandas
 df = pd.read_csv(r"C:\Users\importacao7\Desktop\Projetos\Projetos Python\Gráficos  Python\Municipios_brasileiros2020.csv")
@@ -8,47 +9,104 @@ df = pd.read_csv(r"C:\Users\importacao7\Desktop\Projetos\Projetos Python\Gráfic
 # Configurar o local para Brasil (pt_BR)
 locale.setlocale(locale.LC_ALL, 'pt_BR.UTF-8')
 
-#1º Gráfico: Top 10 municipios com maior Pib
-def top10_municipios(): #Cria um gráfico com o Top 10 municipios com maior PIB
-    
-    #REmove espaços em branco da coluna "Produto Interno Bruto" e converte para int
+# 1º Gráfico: Top 10 municípios com maior PIB
+def top10_municipios():  # Define uma função que gera o gráfico dos 10 municípios com maior PIB
+
+    # Remove espaços em branco da coluna "Produto Interno Bruto" e converte os valores para inteiro
     df['PIB'] = df['Produto Interno Bruto\na preços correntes\n(1 000 R$)'].str.replace(' ', '').astype(int)
 
-    # Ordenar pelos maiores PIBs e pegar o Top 10
+    # Ordena o DataFrame pelo PIB em ordem decrescente e pega os 10 primeiros registros (Top 10)
     top_10 = df.sort_values(by='PIB', ascending=False).head(10)
 
-    # Criar o gráfico de barras horizontais
-    plt.figure(figsize=(9, 5))
-    bars = plt.barh(top_10['Municípios e respectivas\nUnidades da Federação'], top_10['PIB'], color='royalblue')
+    # Define o tamanho da figura para melhor visualização (largura 9, altura 5)
+    plt.figure(figsize=(10, 6))
 
-    # Ajustar limite do eixo X para garantir espaço para os rótulos
+    # Cria um gráfico de barras horizontais, com barras na cor laranja
+    bars = plt.barh(top_10['Municípios e respectivas\nUnidades da Federação'], top_10['PIB'], color='orange')
+
+    # Define o limite do eixo X para garantir espaço extra à direita das barras (10% a mais)
     plt.xlim(0, top_10['PIB'].max() * 1.1)
 
-    # Adicionar rótulos ao lado direito das barras
+    # Adiciona rótulos de valor ao lado direito das barras
     for bar in bars:
-        formatted_value = locale.currency(bar.get_width(), grouping=True)  # Formatar o valor como moeda brasileira
+        formatted_value = locale.currency(bar.get_width(), grouping=True)
         plt.text(
-            bar.get_width() + (top_10['PIB'].max() * 0.01),  # Coloca o rótulo um pouco além da barra
-            bar.get_y() + bar.get_height() / 2,  # Centraliza verticalmente
-            formatted_value,  # Exibe o valor formatado como moeda
-            ha='left',  # Alinha o texto à esquerda
-            va='center',  # Centraliza o rótulo verticalmente
-            color='black',  # Define o texto preto para boa visibilidade
-            fontweight='bold'  # Deixa o rótulo mais destacado
+            bar.get_width() + (top_10['PIB'].max() * 0.1), # traz o rótulo um pouco para dentro da barra.
+            bar.get_y() + bar.get_height() / 2,
+            formatted_value,
+            ha='right',
+            va='center',
+            color='black',
+            fontsize=8  # Define o tamanho da fonte menor
+    )
+
+    plt.xlabel('PIB (em milhares de R$)')# Define o rótulo do eixo X
+    plt.ylabel('Municípios') # Define o rótulo do eixo Y
+    plt.title('Top 10 Municípios com Maior PIB no Brasil')# Define o título do gráfico
+    plt.gca().invert_yaxis() # Inverte o eixo Y para que o maior valor fique no topo do gráfico
+    plt.show() # Exibe o gráfico gerado
+
+#2º Gráfico: Top 5 Estados com maior PIB
+
+def top5_estados():
+    top_5_estados = pib_por_estado.head(5)
+    
+    plt.figure(figsize=(9, 5))
+    bars_top5 = plt.barh(top_5_estados.index, top_5_estados.values, color='orange')
+    
+    # Adicionar rótulos para o Top 5
+    for bar in bars_top5:
+        plt.text(bar.get_width() + 10, bar.get_y() + bar.get_height()/2,
+                 f'{int(bar.get_width()):,}M', 
+                 ha='right', 
+                 va='center', 
+                 fontsize=8)
+    
+    plt.xlabel('PIB (em milhões de R$)')
+    plt.ylabel('Estados')
+    plt.title('Top 5 Estados com Maior PIB no Brasil')
+    plt.gca().invert_yaxis()
+    
+    plt.tight_layout()
+    plt.show()
+
+#3º Grafico: Participação de cada Estado no PIB Nacional
+
+def part_estado():
+    # Remover espaços em branco da coluna do PIB e converter para numérico
+    df['PIB'] = df['Produto Interno Bruto\na preços correntes\n(1 000 R$)'].str.replace(' ', '').astype(int)
+    
+    # Extrair apenas a sigla do estado São Paulo (SP)
+    df['Estado'] = df['Municípios e respectivas\nUnidades da Federação'].str.extract(r'\((\w{2})\)')
+    
+    # Agrupar por Estado e somar o PIB dos municípios
+    pib_por_estado = df.groupby('Estado')['PIB'].sum()
+    
+    # Calcular a participação percentual de cada estado no PIB total do Brasil
+    pib_total_brasil = pib_por_estado.sum() #PIB total do brasil (somando todos os estados)
+    pib_por_estado_percentual = (pib_por_estado / pib_total_brasil) * 100 #calculando a participação de cada estado no PIB total
+
+    pib_por_estado_percentual = pib_por_estado_percentual.sort_values(ascending=False)#Ordenar do Maior para o Menor
+    
+    # Criar gráfico de barras horizontais
+    plt.figure(figsize=(8, 5))
+    sns.barplot(x=pib_por_estado_percentual, y=pib_por_estado_percentual.index,color='orange')
+    plt.xlabel('Participação no PIB (%)')
+    plt.ylabel('Estado')
+    plt.title('Participação de Cada Estado no PIB Total do Brasil')
+    plt.grid(axis='x', linestyle='--', alpha=0.7)
+    
+    # Adicionar rótulos com os valores percentuais
+    for index, value in enumerate(pib_por_estado_percentual):
+        plt.text(value + 2, index, f"{value:.1f}%", 
+        va="center", 
+        ha="right",
+        fontsize=8
         )
-        
-    #configurar título e eixos
-    plt.xlabel('PIB (em milhares de R$)') #define o nome do eixo X
-    plt.ylabel('Municípios') #define o nome do eixo y
-    plt.title('Top 10 Municípios com Maior PIB no Brasil') #define o título do gráfico
-    plt.gca().invert_yaxis()  # Inverte o eixo Y para mostrar o maior no topo
-
-    plt.show() #Exibe o gráfico 
-
 
 #Distruibuição de PIB por Estado (Matriz)
 
-def distr_PibUF():
+def distribuicao_PibUF():
     # Definir a localidade para o Brasil (pt_BR)
     locale.setlocale(locale.LC_ALL, 'pt_BR.UTF-8')
 
@@ -83,9 +141,9 @@ def distr_PibUF():
     
     return styled_matriz  # Retorne o styled_matriz para exibição ou uso
 
-
-
-
 #chamando as funções
 top10_municipios()
-distr_PibUF()
+top5_estados()
+part_estado()
+
+
