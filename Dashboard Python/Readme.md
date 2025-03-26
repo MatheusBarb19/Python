@@ -10,7 +10,7 @@ O objetivo do projeto é facilitar a interpretação dos dados econômicos, dest
 ## 🛠 Tecnologias Utilizadas
 
 - Pandas: Manipulação e limpeza dos dados
-- Matplotlib> Geração de gráficos
+- Matplotlib: Geração de gráficos
 - Locale: Formatação de valores monetários
 
 ## 📊 Funcionalidade
