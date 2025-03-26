@@ -8,7 +8,8 @@ Bem-vindo ao meu repositório dedicado aos meus projetos em Python! 🐍
 - **Gerador de Etiquetas**: Gera um PDF contém as etiquetas, utiliza a linguagem ZPL para isso.
 - **Backup**: Script responsável por gerar backups compactados de arquivos e pastas, pré-definidas pelo usuário.
 - **Pesquisa Mercado Livre**: Realiza pesquisas na plataforma do Mercado Livre, extraí, filtra e exporta uma base de dados.
-
+- **Dashboard Python: Gera gráficos sobre o PIB de municipios estados brasileiros do ano de 2020, a partir de um arquivo csv.
+ 
 ## 🛠️ Tecnologias Utilizadas
 
 - **Python 3.x**
