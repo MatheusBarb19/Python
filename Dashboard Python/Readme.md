@@ -21,7 +21,6 @@ O script realiza as seguintes tarefas:
 - Python 3
 - Pandas
 - Matplotlib
-- Seaborn
 
 ## 👨‍💻 Desenvolvido por:
 
