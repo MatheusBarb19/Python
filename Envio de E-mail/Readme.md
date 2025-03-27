@@ -21,6 +21,7 @@ Com essa abordagem, o envio de e-mails se torna mais dinâmico, eficiente e faci
 ⚠️ A biblioteca JSON já vem integrada ao Python, portanto, não é necessário instalá-la separadamente.
 
 ## 📚 Exemplo do arquivo desnatario.json
+
          {
     "Destinatarios": "ministro@economia",
     "Cc": "Acessor@Ministro",
