@@ -26,7 +26,7 @@ Com essa abordagem, o envio de e-mails se torna mais dinâmico, eficiente e faci
     "Destinatarios": "ministro@economia",
     "Cc": "Acessor@Ministro",
     "Assunto": "Análise do PIB dos Municípios e Estados Brasileiros",
-    "Anexo": "C:/Users/importacao7/Desktop/Projetos/Projetos Python/Envios de Emails/documento.pdf",
+    "Anexo": "Informe o caminho do anexo",
     "Body": [
         "<p>Prezado Ministro,</p>",
         "<p>Espero encontrá-lo bem!</p>",
@@ -36,6 +36,7 @@ Com essa abordagem, o envio de e-mails se torna mais dinâmico, eficiente e faci
         "<p>Atenciosamente,<br>Matheus - Desenvolvedor FullStack e Analista</p>"
     ]
          }
+O uso do JSON torna o script mais flexível, permitindo a troca de informações de maneira dinâmica e personalizável.
 
 ## 👨‍💻 Desenvolvido por:
 
