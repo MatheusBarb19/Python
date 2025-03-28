@@ -37,8 +37,8 @@ Com essa abordagem, o envio de e-mails se torna mais dinâmico, eficiente e faci
         "<p>Atenciosamente,<br>Matheus - Desenvolvedor FullStack e Analista</p>"
     ]
          }
-O uso do JSON torna o script mais flexível, permitindo a troca de informações de maneira dinâmica e personalizável.
-No meu projeto, simulei o envio de e-mail para o Ministro da Economia do Brasil. Mas, você pode construir o e-mail e explorar novos recursos, conforme as suas necessidades.
+- O uso do JSON torna o script mais flexível, permitindo a troca de informações de maneira dinâmica e personalizável.
+- No meu projeto, simulei o envio de e-mail para o Ministro da Economia do Brasil. Mas, você pode construir o e-mail e explorar novos recursos, conforme as suas necessidades.
 
 ## 👨‍💻 Desenvolvido por:
 
