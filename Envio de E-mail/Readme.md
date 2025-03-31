@@ -45,7 +45,7 @@ Acesse o link a para verificar o manual do usuário: <a href="https://drive.goog
 
 
 ## ⚙️ Funcionamento da Aplicação:
-Acesse o link para ver o vídeo: <a href="https://drive.google.com/file/d/1tsP4LC0MDRA6KtLRuxlVGlpNgWu15rNW/view?usp=sharing"> Clique aqui para ver o vídeo. </a.
+Acesse o link para ver o vídeo: <a href="https://drive.google.com/file/d/1tsP4LC0MDRA6KtLRuxlVGlpNgWu15rNW/view?usp=sharing"> Clique aqui para ver o vídeo.
 
 
 ## 👨‍💻 Desenvolvido por:
