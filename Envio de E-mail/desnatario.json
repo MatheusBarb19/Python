@@ -2,7 +2,7 @@
     "Destinatarios": "ministro@economia",
     "Cc": "Acessor@Ministro",
     "Assunto": "Análise do PIB dos Municípios e Estados Brasileiros",
-    "Anexo": "C:/Users/importacao7/Desktop/Projetos/Projetos Python/Envios de Emails/documento.pdf", 
+    "Anexo": "", 
 
     "Body": [
         "<p>Prezado Ministro,</p>",
