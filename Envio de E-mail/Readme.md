@@ -41,7 +41,7 @@ Com essa abordagem, o envio de e-mails se torna mais dinâmico, eficiente e faci
 - No meu projeto, simulei o envio de e-mail para o Ministro da Economia do Brasil. Mas, você pode construir o e-mail e explorar novos recursos, conforme as suas necessidades.
 
 <h2>📌 Como Usar </h2>
-Acesse o link a para verificar o manual do usuário: <a href="">Manual do Usuário.PDF</a>
+Acesse o link a para verificar o manual do usuário: <a href="https://drive.google.com/file/d/1Eohvkou-MuSJBoyB8MbLHV09rdXxzOjV/view?usp=sharing">Manual do Usuário.PDF</a>
 
 
 ## ⚙️ Funcionamento da Aplicação:
