@@ -1,9 +1,0 @@
-"Primeiramente, instale a biblioteca necessária para executar o script de envio de e-mails: PyWin32. Recomendo que faça isso dentro de um ambiente virtual para evitar conflitos com outras dependências.
-
-Em seguida, abra sua IDE e execute o script. Assim que o programa iniciar, ele irá gerar um arquivo .json. Esse arquivo serve para facilitar a configuração do e-mail, permitindo que o usuário personalize facilmente os destinatários, o assunto e o corpo da mensagem.
-
-No meu projeto, configurei o envio de um e-mail destinado ao ministro da economia, incluindo um link para um relatório interativo no Power BI, que apresenta dados sobre o PIB do Brasil em 2020.
-
-O objetivo deste projeto é fornecer um script eficiente e flexível, que pode ser integrado a outros sistemas, permitindo a troca de informações de maneira dinâmica e automatizada.
-
-E é assim que funciona o envio de e-mails automatizado com Python!"
