@@ -4,12 +4,13 @@ Bem-vindo ao meu repositório dedicado aos meus projetos em Python! 🐍
 
 ## 📁 Estrutura do Repositório
 
-- **Gerador de Senhas**: Gera senhas com condições pré-definidas pelo usuário.
-- **Gerador de Etiquetas**: Gera um PDF contém as etiquetas, utiliza a linguagem ZPL para isso.
-- **Backup**: Script responsável por gerar backups compactados de arquivos e pastas, pré-definidas pelo usuário.
-- **Pesquisa Mercado Livre**: Realiza pesquisas na plataforma do Mercado Livre, extraí, filtra e exporta uma base de dados.
-- **Dashboard Python**: Gera gráficos sobre o PIB de municipios estados brasileiros do ano de 2020, a partir de um arquivo csv.
- 
+- **Gerador de Senhas**: Gera senhas com condições pré-definidas pelo usuário .
+- **Gerador de Etiquetas**: Gera um PDF contém as etiquetas, utiliza a linguagem ZPL para isso .
+- **Backup**: Script responsável por gerar backups compactados de arquivos e pastas, pré-definidas pelo usuário .
+- **Pesquisa Mercado Livre**: Realiza pesquisas na plataforma do Mercado Livre, extraí, filtra e exporta uma base de dados .
+- **Dashboard Python**: Gera gráficos sobre o PIB de municipios estados brasileiros do ano de 2020, a partir de um arquivo csv .
+- **Envio de E-mails**: Gera automaticamente um e-mail estruturado a partir de um arquivo.json .
+  
 ## 🛠️ Tecnologias Utilizadas
 
 - **Python 3.x**
