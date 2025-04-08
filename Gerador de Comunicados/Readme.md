@@ -47,13 +47,13 @@ Antes de rodar o projeto, instale as bibliotecas necessárias executando:
 - O uso do JSON torna o script mais flexível, permitindo a troca de informações de maneira dinâmica e personalizável.
 - No meu projeto, simulei o envio de e-mail para o Ministro da Economia do Brasil. Mas, você pode construir o e-mail e explorar novos recursos, conforme as suas necessidades.
 
-## Como usar
+## 📌 Como usar
 
 ## ▶️ Funcionamento da Aplicação
 
-## Desenvolvido por
+## 👨‍💻 Desenvolvido por
 
-## 👨‍💻 Autor: Matheus Barbosa
-     - 🔗 Repositório: GitHub - MatheusBarb19
-     - 🔗 LinkedIn: https://www.linkedin.com/in/matheus-felix-barbosa-658422227
-     - 💡 Sugestões e melhorias são bem-vindas!
+📌 Autor: Matheus Barbosa
+     .🔗 Repositório: GitHub - MatheusBarb19
+     .🔗 LinkedIn: https://www.linkedin.com/in/matheus-felix-barbosa-658422227
+     .💡 Sugestões e melhorias são bem-vindas!
