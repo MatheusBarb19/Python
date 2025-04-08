@@ -5,10 +5,10 @@ O Gerador de Comunicados é uma ferramenta desenvolvida em Python para automatiz
 
 ## 🚀 Funcionalidades
 
-.Gera comunicados automáticos em PDF com base em informações estruturadas.
-.Envia os comunicados por e-mail para destinatários especificados.
-.Utiliza arquivos JSON para facilitar a personalização dos comunicados.
-.Interface amigável baseada em Tkinter.
+- Gera comunicados automáticos em PDF com base em informações estruturadas.
+- Envia os comunicados por e-mail para destinatários especificados.
+- Utiliza arquivos JSON para facilitar a personalização dos comunicados.
+- Interface amigável baseada em Tkinter.
 
 ## 🛠️ Tecnologias Utilizadas
 
