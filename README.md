@@ -22,6 +22,8 @@ Bem-vindo ao meu repositório dedicado aos meus projetos em Python! 🐍
   - Openpyxl
   - Matplotlib
   - Requests
+  - Reportlab
+  - Pywin32
 
 ## 🚧 Em desenvolvimento
 
@@ -33,7 +35,6 @@ Bem-vindo ao meu repositório dedicado aos meus projetos em Python! 🐍
 
 - Criar automações e ferramentas úteis
 - Aprender e testar novas bibliotecas
-- Desenvolver projetos para o portfólio
 
 ## 📌 Como executar os projetos
 
