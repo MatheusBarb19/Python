@@ -54,6 +54,6 @@ Antes de rodar o projeto, instale as bibliotecas necessárias executando:
 ## 👨‍💻 Desenvolvido por
 
 📌 Autor: Matheus Barbosa
--🔗 Repositório: GitHub - MatheusBarb19
--🔗 LinkedIn: https://www.linkedin.com/in/matheus-felix-barbosa-658422227
--💡 Sugestões e melhorias são bem-vindas!
+🔗 Repositório: GitHub - MatheusBarb19
+🔗 LinkedIn: https://www.linkedin.com/in/matheus-felix-barbosa-658422227
+💡 Sugestões e melhorias são bem-vindas!
