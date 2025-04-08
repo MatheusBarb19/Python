@@ -1,19 +1,20 @@
-import tkinter as tk
+import tkinter as tk # cria a janela
 from tkinter import ttk
 from tkinter import messagebox
-from reportlab.pdfgen import canvas
-import textwrap
 
-from reportlab.lib.pagesizes import A4
-from datetime import datetime
+from reportlab.pdfgen import canvas #Cria o PDF
+import textwrap
+from reportlab.lib.pagesizes import A4 #Tamanho do PDF em A$
+
 from Envio_email import enviar_email  # Importa a função sem executá-la automaticamente
-import json
-import os
+from datetime import datetime #biblioteca datetime
+import json #manipula json
+import os #disponiniliza recursos do Windosw
 
 def mm_to_p(mm):
     return mm / 0.352777  # Converte mm para pontos
 
-#função para permitir a quebra de linha automática
+#função para permitir a quebra de linha automática ao final da pagina
 def adicionar_texto_multilinha(pdf, texto, x, y, largura_max, fonte="Helvetica", tamanho=12, leading=20):
     """ Adiciona um bloco de texto com quebras automáticas de linha. """
     text_object = pdf.beginText(mm_to_p(x), mm_to_p(y))
@@ -57,7 +58,8 @@ class Application:
         self.label_tipo.pack(pady=5)
 
         #Criando uma combobox    
-        self.tipo_alteracao = ttk.Combobox(self.container_principal, values=[ #opções da combobox
+        self.tipo_alteracao = ttk.Combobox(self.container_principal, values=[ 
+            #opções da combobox
             "Novo Produto",                                                                 
             "Alteração de Código",          
             "Alteração de Similaridade",
@@ -72,11 +74,11 @@ class Application:
         self.frame_dinamico.pack(pady=10)
 
         # Botão para gerar PDF
-        self.botao_gerar = tk.Button(self.container_principal, text="Gerar PDF", font=self.fonte_padrao, command=self.gerar_pdf)
+        self.botao_gerar = tk.Button(self.container_principal, text="Gerar PDF", font=self.fonte_padrao, command=self.gerar_pdf) #atribuindo a função ao botão
         self.botao_gerar.pack(pady=10)
 
        #botão enviar Gerar e enviar e-mail
-        self.botao_GerareEnviar = tk.Button(self.container_principal, text="Gerar e Enviar", font=self.fonte_padrao, command=self.gerar_e_enviar)
+        self.botao_GerareEnviar = tk.Button(self.container_principal, text="Gerar e Enviar", font=self.fonte_padrao, command=self.gerar_e_enviar) #atribuindo a função ao botão
         self.botao_GerareEnviar.pack(pady=10) 
 
     def mostrar_campos(self, event):
@@ -88,6 +90,7 @@ class Application:
 
         tipo = self.tipo_alteracao.get()
 
+        #campos input para inserir informações
         if tipo == "Novo Produto":
             self.adicionar_campo("SKU")
             self.adicionar_campo("Linha produto")
@@ -109,26 +112,27 @@ class Application:
 
     def adicionar_campo(self, label_texto):
         """ Adiciona um campo de entrada na interface. """
-        label = tk.Label(self.frame_dinamico, text=label_texto, font=self.fonte_padrao)
-        label.pack()
-        entry = tk.Entry(self.frame_dinamico, width=35)
-        entry.pack()
+        label = tk.Label(self.frame_dinamico, text=label_texto, font=self.fonte_padrao) #nome do campo ex: SKU
+        label.pack() #Atribui a label no frame
+        entry = tk.Entry(self.frame_dinamico, width=35) #insere o Entry (campo input)
+        entry.pack() #atribui o Entry no frame
         self.campos[label_texto] = entry
         
         
     def gerar_pdf(self):
+        #Funcão responsável por gerar o PDF
         
-        dia_atual = datetime.now().strftime('%d/%m/%Y')
+        dia_atual = datetime.now().strftime('%d/%m/%Y') #extrai o dia atual
         
         """ Gera um PDF com as informações inseridas na interface. """
         tipo = self.tipo_alteracao.get()
         if not tipo:
-            messagebox.showerror("Erro", "Por favor, selecione um tipo de alteração!")
+            messagebox.showerror("Erro", "Por favor, selecione um tipo de alteração!") #força a escolha do usuário 
             return
 
         dados = {campo: entry.get() for campo, entry in self.campos.items()}
         if any(not valor for valor in dados.values()):
-            messagebox.showerror("Erro", "Todos os campos devem ser preenchidos!")
+            messagebox.showerror("Erro", "Todos os campos devem ser preenchidos!") #Obriga que todos os Campos devem ser preenchidos
             return
         
         # Gerar o texto do comunicado
@@ -152,7 +156,7 @@ class Application:
             """
             
         # Criando o PDF
-        pdf = canvas.Canvas("COMUNICADO_MBPROJECTS.pdf", pagesize=A4)
+        pdf = canvas.Canvas("COMUNICADO_MBPROJECTS.pdf", pagesize=A4) #Nomeando o documento.pdf e incorporando o tamanho A4
 
         # Adicionando um título fixo
         pdf.setFont("Helvetica-Bold", 14)
@@ -161,6 +165,7 @@ class Application:
         pdf.setFont("Helvetica", 12)
         pdf.drawString(mm_to_p(15), mm_to_p(240), "Prezados colaboradores,") #Comprimentos
 
+        #Caso o usuário escolha "Alteração de Aplicação", a aplicação é inserida no documento, como último elemento, para não causar divergências.
         if tipo=="Alteração de Aplicação": #inserir a aplicação no documento
             if tipo == "Alteração de Aplicação":
                 pdf.setFont("Helvetica", 11)
@@ -180,7 +185,8 @@ class Application:
                 for linha in linhas:
                     pdf.drawString(x, y, linha)
                     y -= 15  # Move para a próxima linha (ajuste conforme necessário)
-                    
+
+        #Caso o usuário escolha "Novo Produto", a aplicação é inserida no documento, como último elemento, para não causar divergências.
         if tipo=="Novo Produto":
              if tipo == "Novo Produto":
                 pdf.setFont("Helvetica", 11)
@@ -207,10 +213,10 @@ class Application:
         pdf.drawString(mm_to_p(15), mm_to_p(180), f"Caso haja dúvidas, estamos à disposição para prestar esclarecimentos.") #Texto 1 rodape
         
         pdf.setFont("Helvetica", 12)
-        pdf.drawString(mm_to_p(15), mm_to_p(30), f"Equipe Logística") #Texto 1 rodape
+        pdf.drawString(mm_to_p(15), mm_to_p(30), f"Equipe Logística") #Texto 2 rodape
         
         pdf.setFont("Helvetica", 12)
-        pdf.drawString(mm_to_p(15), mm_to_p(20), f"MB PROJECTS SA - {datetime.now().strftime('%Y')}.") #Texto 2 rodape
+        pdf.drawString(mm_to_p(15), mm_to_p(20), f"MB PROJECTS SA - {datetime.now().strftime('%Y')}.") #Texto 3 rodape
         
         """Adicionar imagem ao pdf"""
         largura_pagina, altura_pagina = A4
@@ -238,19 +244,19 @@ class Application:
         adicionar_texto_multilinha(pdf, texto_descritivo, x=15, y=208, largura_max=185, fonte="Helvetica", tamanho=12) #Inserindo um texto descritivo
         pdf.save()
 
-        messagebox.showinfo("Sucesso", "PDF gerado com sucesso!")
+        messagebox.showinfo("Sucesso", "PDF gerado com sucesso!") #exibe um abiso de sucesso
         
-        caminho_pdf = os.path.join(os.getcwd(), "COMUNICADO_MBPROJECTS.pdf")
+        caminho_pdf = os.path.join(os.getcwd(), "COMUNICADO_MBPROJECTS.pdf") #obtendo o caminho do pdf na pasta
 
         return caminho_pdf
     
-    def gerar_e_enviar(self, event=None):
+    def gerar_e_enviar(self, event=None): #Gerar o PDF e envia o documento por e-mail
         
         caminho_pdf = self.gerar_pdf() # type: ignore
         
         # Carrega os dados do JSON
-        with open("destinatario.json", "r", encoding="utf-8") as file:
-            dados = json.load(file)
+        with open("destinatario.json", "r", encoding="utf-8") as file: #Lê as informações que estrturam o E-mail
+            dados = json.load(file) #Atribui os valores 
             
         # Pega as informações do JSON
         assunto = dados["Assunto"]
@@ -259,7 +265,7 @@ class Application:
         Cc = dados.get("Cc", "")  # Se não houver Cc, mantém vazio
         anexo = caminho_pdf
         
-        enviar_email(assunto, destinatario, corpo_email, Cc, anexo)
+        enviar_email(assunto, destinatario, corpo_email, Cc, anexo) #Chamando a função no arquivo Envio_email.py
         
 # Inicialização da Aplicação
 root = tk.Tk()
