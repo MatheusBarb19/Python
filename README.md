@@ -10,7 +10,8 @@ Bem-vindo ao meu repositório dedicado aos meus projetos em Python! 🐍
 - **Pesquisa Mercado Livre**: Realiza pesquisas na plataforma do Mercado Livre, extraí, filtra e exporta uma base de dados .
 - **Dashboard Python**: Gera gráficos sobre o PIB de municipios estados brasileiros do ano de 2020, a partir de um arquivo csv .
 - **Envio de E-mails**: Gera automaticamente um e-mail estruturado a partir de um arquivo.json .
-  
+- **Gerador de Comunicados**: Gera um comunicado em formato PDF, com informações de inserção e alteração de produtos. Além disso, possui a opção de ser enviado por e-mail.
+    
 ## 🛠️ Tecnologias Utilizadas
 
 - **Python 3.x**
