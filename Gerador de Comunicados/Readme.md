@@ -14,10 +14,10 @@ O Gerador de Comunicados é uma ferramenta desenvolvida em Python para automatiz
 
 - Linguagem: Python 3.x 🐍
 - Bibliotecas:
-     . reportlab (para gerar PDFs)
-     . pywin32 (para envio de e-mails)
-     . tkinter (para interface gráfica)
-     . json (para armazenar dados de destinatários)
+     - reportlab (para gerar PDFs)
+     - pywin32 (para envio de e-mails)
+     - tkinter (para interface gráfica)
+     - json (para armazenar dados de destinatários)
   
 ## 🛠️ Instalação
 
