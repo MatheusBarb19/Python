@@ -74,5 +74,5 @@ Este repositório está licenciado sob a **MIT License**.
 Se tiver dúvidas, sugestões ou quiser colaborar com este projeto, entre em contato:
 
 - Email: mateus.felixbarb@email.com
-- LinkedIn: in/matheus-felix-barbosa-658422227](https://www.linkedin.com/
+- LinkedIn: [https://www.linkedin.com/in/matheus-felix-barbosa-658422227]
 - GitHub: @MatheusBarb19
