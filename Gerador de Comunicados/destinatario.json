@@ -1,0 +1,13 @@
+{
+    "Destinatarios": ["Destinatário1", "Destinatário2"],
+    "Assunto": "Comunicado de Alteração",
+    "Cc": "",
+    "Anexo": "",
+    "Corpo-email": [
+        "<a>Prezados colaboradores, </a>",
+        "<p>Informamos que um novo documento foi gerado e está disponível em anexo.</p>",
+        "<p>Este documento contém informações detalhadas sobre as alterações realizadas em códigos, similaridade ou aplicação de [produto/código/referência].</p><br>",
+        "<p>Atenciosamente,</p>",
+        "<p>MB PROJECTS</p>"
+    ]
+}
