@@ -25,7 +25,8 @@ O Gerador de Comunicados é uma ferramenta desenvolvida em Python para automatiz
 Certifique-se de ter o Python 3 instalado em sua máquina. Caso não tenha, baixe e instale <a href="https://www.python.org/downloads/">aqui.</a>
 
 ### 📦 Instalando Bibliotecas necessárias
-Antes de rodar o projeto, instale as bibliotecas necessárias executando:
+
+1. Antes de rodar o projeto, instale as bibliotecas necessárias executando:
           pip install pywin32
           pip install reportlab
 
