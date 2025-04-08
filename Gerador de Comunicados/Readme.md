@@ -26,9 +26,9 @@ Certifique-se de ter o Python 3 instalado em sua máquina. Caso não tenha, baix
 
 ### 📦 Instalando Bibliotecas necessárias
 
-1. Antes de rodar o projeto, instale as bibliotecas necessárias executando:
-          -pip install pywin32
-          -pip install reportlab
+1. **Antes de rodar o projeto, instale as bibliotecas necessárias executando**:
+     pip install pywin32
+     pip install reportlab
 
 ## ✉️ Configuração do Envio de E-mails
           {
