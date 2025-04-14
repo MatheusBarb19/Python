@@ -1,4 +1,4 @@
-# 📢 Gerador de Comunidados em PDF
+# 📢 Gerador de Comunicados em PDF
 
 ## 📝 Descrição:
 O Gerador de Comunicados é uma ferramenta desenvolvida em Python para automatizar a criação de comunicados em formato PDF e seu envio por e-mail. O sistema utiliza a biblioteca reportlab para gerar os PDFs e o pywin32 para no envio das mensagens eletrônicas.
