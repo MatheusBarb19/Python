@@ -46,7 +46,7 @@ Certifique-se de ter o Python 3 instalado em sua máquina. Caso não tenha, baix
 - No meu projeto, simulei o envio de e-mail para o Ministro da Economia do Brasil. Mas, você pode construir o e-mail e explorar novos recursos, conforme as suas necessidades.
 
 ## 📌 Como usar
-Confira o Manual de Usuário: <a href = "">Visualizar PDF</a>
+Confira o Manual de Usuário: <a href = "https://drive.google.com/file/d/1CylYsAtFtlZKRkIuBHIiPIgNgjjysBPM/view?usp=sharing">Visualizar PDF</a>
 
 ## ▶️ Funcionamento da Aplicação
 Confira como a aplicação funciona: <a href = "">Visualizar vídeo</a>
